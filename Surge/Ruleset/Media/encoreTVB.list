@@ -10,3 +10,7 @@ DOMAIN-SUFFIX,hk01.com
 DOMAIN-SUFFIX,on.cc
 DOMAIN-SUFFIX,hk.on.cc
 DOMAIN,orientaldaily.on.cc
+# > TvbanywhereNA
+USER-AGENT,tvb*
+USER-AGENT,tvbanywhere*
+DOMAIN-SUFFIX,tvbanywherena.com

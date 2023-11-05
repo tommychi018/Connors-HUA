@@ -214,3 +214,7 @@ USER-AGENT,YouTube*
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN,youtubei.googleapis.com
+# > TvbanywhereNA
+USER-AGENT,tvb*
+USER-AGENT,tvbanywhere*
+DOMAIN-SUFFIX,tvbanywherena.com

@@ -218,3 +218,6 @@ DOMAIN,youtubei.googleapis.com
 USER-AGENT,tvb*
 USER-AGENT,tvbanywhere*
 DOMAIN-SUFFIX,tvbanywherena.com
+# > Ganjingworld
+USER-AGENT,Ganjingworld*
+DOMAIN-SUFFIX,ganjingworld.com

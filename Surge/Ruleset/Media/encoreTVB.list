@@ -16,3 +16,8 @@ DOMAIN,orientaldaily.on.cc
 USER-AGENT,tvb*
 USER-AGENT,tvbanywhere*
 DOMAIN-SUFFIX,tvbanywherena.com
+USER-AGENT,mytv*
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive
+DOMAIN-SUFFIX,tvb.com

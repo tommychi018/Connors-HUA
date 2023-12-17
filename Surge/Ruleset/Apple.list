@@ -41,6 +41,9 @@ DOMAIN-SUFFIX,itools.info
 DOMAIN-SUFFIX,ibook.info
 DOMAIN-SUFFIX,itunes.com
 
+# > 苹果店现场预约时遇到的 503 问题
+DOMAIN,reserve-prime.apple.com, DIRECT
+
 # > Apple Music
 DOMAIN,aod.itunes.apple.com
 DOMAIN,audio.itunes.apple.com

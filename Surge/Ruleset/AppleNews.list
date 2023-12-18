@@ -1,14 +1,25 @@
-# > Apple News
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN,gateway.icloud.com
-DOMAIN,news-events.apple.com
-DOMAIN,gateway.icloud.com
-DOMAIN,apple.comscoreresearch.com
-DOMAIN-SUFFIX,apple.news
-DOMAIN,news-client.apple.com
-DOMAIN,news-edge.apple.com
-DOMAIN,gspe1-ssl.ls.apple.com
+
+# > Apple News and Apple Map TOMTOM Version
+USER-AGENT,com.apple.geod*
+USER-AGENT,com.apple.Maps
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,Maps*
+DOMAIN,gs-loc.apple.com
+DOMAIN-SUFFIX,lcdn-locator.apple.com
+DOMAIN-SUFFIX,lcdn-registration.apple.com
+DOMAIN-SUFFIX,ls.apple.com
 PROCESS-NAME,News
-USER-AGENT,AppleNews*
+DOMAIN,gspe1-ssl.ls.apple.com
+USER-AGENT,News* 
+USER-AGENT,AppleNews* 
 USER-AGENT,com.apple.news*
-USER-AGENT,News*
+DOMAIN,gateway.icloud.com
+DOMAIN,news-client.apple.com  
+DOMAIN-SUFFIX,apple.news
+DOMAIN,news-events.apple.com
+DOMAIN,news-edge.apple.com
+DOMAIN,apple.comscoreresearch.com
+DOMAIN,play.itunes.apple.com
+DOMAIN,play-cdn.itunes-apple.com.akadns.net
+DOMAIN,c.apple.com

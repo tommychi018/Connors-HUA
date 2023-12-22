@@ -573,6 +573,12 @@ DOMAIN-SUFFIX,iadctest.qwapi.com
 DOMAIN-SUFFIX,log.moviebox.baofeng.com
 DOMAIN-SUFFIX,logger.baofeng.com
 
+# > BiliBili
+DOMAIN,thirdparty.biliapi.com
+DOMAIN,data.bilibili.com
+DOMAIN,cm.bilibili.com
+DOMAIN,miniapp.bilibili.com
+
 ## 其他
 DOMAIN-SUFFIX,ad.video.51togic.com
 DOMAIN-SUFFIX,ads.cdn.tvb.com
@@ -785,3 +791,22 @@ DOMAIN-SUFFIX,prom.gome.com.cn
 DOMAIN-SUFFIX,rlogs.youdao.com
 DOMAIN-SUFFIX,static.flv.uuzuonline.com
 DOMAIN-SUFFIX,wanproxy.127.net
+
+# > Zhihu
+DOMAIN,crash2.zhihu.com
+DOMAIN,vdn.vzuu.com
+DOMAIN,sugar.zhihu.com
+USER-AGENT,ZhihuHybrid*)
+DOMAIN,api.zhihu.com)
+DOMAIN,unpkg.zhimg.com
+DOMAIN,lens.zhihu.com
+
+# > Thirdparty
+DOMAIN,pingma.qq.com
+DOMAIN-SUFFIX,fusion.qq.com
+
+# > BiliBili
+DOMAIN,thirdparty.biliapi.com
+DOMAIN,data.bilibili.com
+DOMAIN,cm.bilibili.com
+DOMAIN,miniapp.bilibili.com

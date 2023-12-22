@@ -1,4 +1,4 @@
 # > Speedtest by Ookla
 USER-AGENT,SpeedTest*
 DOMAIN-KEYWORD,speedtest
-PROCESS-NAME,Speedtest, DIRECT
+PROCESS-NAME,Speedtest

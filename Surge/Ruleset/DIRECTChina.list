@@ -122,9 +122,11 @@ DOMAIN-SUFFIX,ipv6-test.com
 DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,whatismyip.com
 DOMAIN,ip.bjango.com
+
 # > Speed test
 DOMAIN-SUFFIX,nspeedtest.net
 DOMAIN-SUFFIX,netspeedtestmaster.com
+
 # > Other
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,cailianpress.com
@@ -164,3 +166,19 @@ DOMAIN-SUFFIX,zhimg.cou
 DOMAIN-SUFFIX,zhuihd.com
 USER-AGENT,NeteaseMusic*
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
+
+# > Proxy
+PROCESS-NAME,v2ray
+PROCESS-NAME,ss-local
+
+# > Download
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
+DOMAIN-SUFFIX,vd.l.qq.com

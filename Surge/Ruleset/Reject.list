@@ -810,3 +810,11 @@ DOMAIN,thirdparty.biliapi.com
 DOMAIN,data.bilibili.com
 DOMAIN,cm.bilibili.com
 DOMAIN,miniapp.bilibili.com
+
+# > Others 
+DOMAIN-SUFFIX,sublimetext.com
+DOMAIN-SUFFIX,sublimehq.com
+DOMAIN-SUFFIX,account.jetbrains.com
+URL-REGEX,^https?://www\.duokan\.com/pictures
+URL-REGEX,^https?://www\.duokan\.com/promotion_day
+

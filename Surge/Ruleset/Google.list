@@ -60,3 +60,5 @@ DOMAIN,analytics.google.com
 DOMAIN,analyticsinsights-pa.googleapis.com
 DOMAIN,analyticsreporting.googleapis.com
 DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,apkpure.com

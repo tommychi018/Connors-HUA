@@ -173,6 +173,16 @@ DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,smtp
 URL-REGEX,(Subject|HELO|SMTP)
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,lastpass.com
+DOMAIN-SUFFIX,zaihua.io
+DOMAIN-SUFFIX,netgear.com
+DOMAIN-SUFFIX,yinxiang.com
+DOMAIN-SUFFIX,logcg.com
+DOMAIN-SUFFIX,vd.l.qq.com
+USER-AGENT,App%20Store*
+USER-AGENT,MacAppStore*
+USER-AGENT,%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0*
 
 
 # > Apple & SIRI

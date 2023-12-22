@@ -6,4 +6,4 @@ DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-KEYWORD,-tiktokcdn-com
 # > TikTok封区解锁
-DOMAIN,api-h2.tiktokv.com,PROXY
+DOMAIN,api-h2.tiktokv.com

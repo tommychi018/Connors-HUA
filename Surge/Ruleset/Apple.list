@@ -55,6 +55,11 @@ DOMAIN,mvod.itunes.apple.com
 
 # > Apple TV
 DOMAIN,ocvideo.apple.com
+DOMAIN,gdmf.apple.com // appletv update
+DOMAIN,bpapi.apple.com // appletv update
+DOMAIN,appldnld.apple.com // appletv update
+DOMAIN,sylvan.apple.com // appletv screen
+DOMAIN,lcdn-locator.apple.com
 
 # > Apple Media 
 DOMAIN-KEYWORD,AppleCoreMedia

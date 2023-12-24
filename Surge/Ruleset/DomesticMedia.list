@@ -2,6 +2,27 @@
 # > 愛奇藝台灣站
 DOMAIN-SUFFIX,iqiyi.com
 DOMAIN-SUFFIX,71.am
+
 # > BiliBili
 DOMAIN-SUFFIX,bilibili.com
 DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,hdslb.com
+
+# > iQiyi
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,71.am.com
+
+# > CCTV
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,cctvpic.com
+DOMAIN-SUFFIX,livechina.com
+
+# > Steam
+DOMAIN-SUFFIX,steampowered.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-KEYWORD,steamcdn
+DOMAIN-KEYWORD,steamstore
+DOMAIN-KEYWORD,steamuserimages
+DOMAIN-KEYWORD,steambroadcast

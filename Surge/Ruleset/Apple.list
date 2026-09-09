@@ -33,14 +33,15 @@ USER-AGENT,FMFD*
 USER-AGENT,fmflocatord*
 DOMAIN-KEYWORD,fmfmobile
 
+# >> TestFlight
+DOMAIN,testflight.apple.com
 
-# > App Store Download || iBooks Sample
-DOMAIN-SUFFIX,itunes.apple.com
-PROCESS-NAME,storedownload // Mac App Store
-USER-AGENT,com.apple.appstored* // iOS App Store
-DOMAIN-SUFFIX,itools.info
-DOMAIN-SUFFIX,ibook.info
-DOMAIN-SUFFIX,itunes.com
+# >> Apple URL Shortener
+DOMAIN-SUFFIX,appsto.re
+
+# >> Spotlight
+DOMAIN,api-glb-sea.smoot.apple.com
+
 
 # > Apple Music
 DOMAIN,aod.itunes.apple.com
@@ -59,6 +60,26 @@ DOMAIN,appldnld.apple.com // appletv update
 DOMAIN,sylvan.apple.com // appletv screen
 DOMAIN,lcdn-locator.apple.com
 
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:15:11
+# DOMAIN: 6
+# DOMAIN-SUFFIX: 1
+# PROCESS-NAME: 1
+# USER-AGENT: 2
+# TOTAL: 10
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,tv.applemusic.com
+DOMAIN,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
+USER-AGENT,AppleTV*
+USER-AGENT,com.apple.tv*
+PROCESS-NAME,TV
+
+
 # > Apple Media 
 DOMAIN-KEYWORD,AppleCoreMedia
 
@@ -67,9 +88,21 @@ DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-KEYWORD,apple-relay
 
-
-# > Apple Storedownload 
-PROCESS-NAME,storedownloadd // Mac App Store
+# > App Store Download || iBooks Sample
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN,books.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
+PROCESS-NAME,storedownload // Mac App Store
 USER-AGENT,com.apple.appstored* // iOS App Store
+DOMAIN-SUFFIX,itools.info
+DOMAIN-SUFFIX,ibook.info
+DOMAIN-SUFFIX,itunes.com
 
-
+# NAME: AppStore
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:15:10
+# DOMAIN: 2
+# TOTAL: 2
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com

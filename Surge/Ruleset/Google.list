@@ -52,12 +52,8 @@ DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-DOMAIN-KEYWORD, google
+DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,blogspot
-DOMAIN-KEYWORD,notebookLM
-DOMAIN-KEYWORD,gemini
-DOMAIN-SUFFIX,notebookLM.google.com 
-DOMAIN-SUFFIX,gemini.google.com
 
 # > Exclusions
 DOMAIN,analytics.google.com

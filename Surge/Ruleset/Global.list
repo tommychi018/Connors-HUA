@@ -1,43 +1,5 @@
 # (DNS Cache Pollution Protection)
-# > Microsoft
-DOMAIN-SUFFIX,onedrive.live.com
-DOMAIN-SUFFIX,xboxlive.com
-# > Facebook
-DOMAIN-SUFFIX,cdninstagram.com
-DOMAIN-SUFFIX,fb.com
-DOMAIN-SUFFIX,fb.me
-DOMAIN-SUFFIX,fbaddins.com
-DOMAIN-SUFFIX,fbcdn.net
-DOMAIN-SUFFIX,fbsbx.com
-DOMAIN-SUFFIX,fbworkmail.com
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,m.me
-DOMAIN-SUFFIX,messenger.com
-DOMAIN-SUFFIX,oculus.com
-DOMAIN-SUFFIX,oculuscdn.com
-DOMAIN-SUFFIX,rocksdb.org
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.net
-DOMAIN-KEYWORD,facebook
-IP-CIDR,3.123.36.126/32,no-resolve
-IP-CIDR,35.157.215.84/32,no-resolve
-IP-CIDR,35.157.217.255/32,no-resolve
-IP-CIDR,52.58.209.134/32,no-resolve
-IP-CIDR,54.93.124.31/32,no-resolve
-IP-CIDR,54.162.243.80/32,no-resolve
-IP-CIDR,54.173.34.141/32,no-resolve
-IP-CIDR,54.235.23.242/32,no-resolve
-IP-CIDR,169.45.248.118/32,no-resolve
-# > Twitter
-DOMAIN-SUFFIX,pscp.tv
-DOMAIN-SUFFIX,periscope.tv
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,twimg.co
-DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,twitpic.com
-DOMAIN-SUFFIX,vine.co
-DOMAIN-KEYWORD,twitter
-# > Line
+# > Line (Additional)
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line-apps.com
 DOMAIN-SUFFIX,line-scdn.net
@@ -407,79 +369,9 @@ DOMAIN-SUFFIX,zattoo.com
 USER-AGENT,Roam*
 
 # (The Most Popular Sites)
-# > Apple
-# >> TestFlight
-DOMAIN,testflight.apple.com
-# >> Apple URL Shortener
-DOMAIN-SUFFIX,appsto.re
-# >> iBooks Store download
-DOMAIN,books.itunes.apple.com
-# >> iTunes Store Moveis Trailers
-DOMAIN,hls.itunes.apple.com
-# >> App Store Preview
-DOMAIN,apps.apple.com
-DOMAIN,itunes.apple.com
-# >> Spotlight
-DOMAIN,api-glb-sea.smoot.apple.com
 # >> Dictionary
 DOMAIN,lookup-api.apple.com
 PROCESS-NAME,LookupViewService
-# > Google
-DOMAIN-SUFFIX,abc.xyz
-DOMAIN-SUFFIX,android.com
-DOMAIN-SUFFIX,androidify.com
-DOMAIN-SUFFIX,dialogflow.com
-DOMAIN-SUFFIX,autodraw.com
-DOMAIN-SUFFIX,capitalg.com
-DOMAIN-SUFFIX,certificate-transparency.org
-DOMAIN-SUFFIX,chrome.com
-DOMAIN-SUFFIX,chromeexperiments.com
-DOMAIN-SUFFIX,chromestatus.com
-DOMAIN-SUFFIX,chromium.org
-DOMAIN-SUFFIX,creativelab5.com
-DOMAIN-SUFFIX,debug.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,firebaseio.com
-DOMAIN-SUFFIX,getmdl.io
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,gmodules.com
-DOMAIN-SUFFIX,godoc.org
-DOMAIN-SUFFIX,golang.org
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,gv.com
-DOMAIN-SUFFIX,gwtproject.org
-DOMAIN-SUFFIX,itasoftware.com
-DOMAIN-SUFFIX,madewithcode.com
-DOMAIN-SUFFIX,material.io
-DOMAIN-SUFFIX,polymer-project.org
-DOMAIN-SUFFIX,admin.recaptcha.net
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-SUFFIX,shattered.io
-DOMAIN-SUFFIX,synergyse.com
-DOMAIN-SUFFIX,tensorflow.org
-DOMAIN-SUFFIX,tfhub.dev
-DOMAIN-SUFFIX,tiltbrush.com
-DOMAIN-SUFFIX,waveprotocol.org
-DOMAIN-SUFFIX,waymo.com
-DOMAIN-SUFFIX,webmproject.org
-DOMAIN-SUFFIX,webrtc.org
-DOMAIN-SUFFIX,whatbrowser.org
-DOMAIN-SUFFIX,widevine.com
-DOMAIN-SUFFIX,x.company
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
-# > Microsoft
-# >> Microsoft OneDrive
-DOMAIN-SUFFIX,1drv.com
-DOMAIN-SUFFIX,1drv.ms
-DOMAIN-SUFFIX,blob.core.windows.net
-DOMAIN-SUFFIX,livefilestore.com
-DOMAIN-SUFFIX,onedrive.com
-DOMAIN-SUFFIX,storage.live.com
-DOMAIN-SUFFIX,storage.msn.com
-DOMAIN,oneclient.sfx.ms
 # > Other
 DOMAIN-SUFFIX,0rz.tw
 DOMAIN-SUFFIX,4bluestones.biz

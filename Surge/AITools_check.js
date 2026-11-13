@@ -87,14 +87,3 @@ Promise.all([exitInfo()].concat(TARGETS.map(function (t) { return probe(t[0], t[
     console.log("AITools_check failed: " + e);
     $done({ title: "AI Tools", content: "Check failed: " + e, icon: "xmark.seal.fill", "icon-color": "#D65C51" });
   });
-// [Script]
-// http-response ^https?:\/\/m\.poizon\.com\/client\/init script-path=https://github.com/ConnersHua/Profiles/raw/master/Surge/Script/com.poizon.js,requires-body=true
-// [MITM]
-// hostname = m.poizon.com
-
-let result = JSON.parse(body);
-
-delete result.data.boot;
-delete result.data.bootAnimation;
-
-JSON.stringify(result);

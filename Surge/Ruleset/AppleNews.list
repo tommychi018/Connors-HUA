@@ -1,46 +1,49 @@
-
-# New AppleNew List by Claude 
 # AppleNews 服务策略 (remote AppleNews.list removed; everything it contributed is now explicit here, in the same position)
-# >Apple News must precede the broader Apple rule sets below.
+# >Apple News must precede the broader Apple rule sets below and route all rules to AppleNews(Region-NA)
+
 # --- Process (macOS) ---
-PROCESS-NAME,News,AppleNews
+PROCESS-NAME,News
+
 # --- App identification by User-Agent (HTTP only; also catches geod/locationd) ---
-USER-AGENT,com.apple.geod*,AppleNews
-USER-AGENT,com.apple.Maps,AppleNews
-USER-AGENT,geod*,AppleNews
-USER-AGENT,locationd*,AppleNews
-USER-AGENT,Maps*,AppleNews
-USER-AGENT,News*,AppleNews
-USER-AGENT,AppleNews*,AppleNews
-USER-AGENT,com.apple.news*,AppleNews
+USER-AGENT,com.apple.geod*
+USER-AGENT,com.apple.Maps
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,Maps*
+USER-AGENT,News*
+USER-AGENT,AppleNews*
+USER-AGENT,com.apple.news*
+
 # --- News hosts (suffix rules already cover their exact-domain twins) ---
-DOMAIN-SUFFIX,apple.news,AppleNews
-DOMAIN-SUFFIX,news.apple.com,AppleNews
-DOMAIN-SUFFIX,news-client.apple.com,AppleNews
-DOMAIN-SUFFIX,news-client-search.apple.com,AppleNews
-DOMAIN-SUFFIX,news-events.apple.com,AppleNews
-DOMAIN-SUFFIX,news-edge.apple.com,AppleNews
-DOMAIN-SUFFIX,news-assets.apple.com,AppleNews
-DOMAIN,news-todayconfig-edge.apple.com,AppleNews
-DOMAIN,news-sports-events.apple.com,AppleNews
-DOMAIN,c.apple.com,AppleNews
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,news.apple.com
+DOMAIN-SUFFIX,news-client.apple.com
+DOMAIN-SUFFIX,news-client-search.apple.com
+DOMAIN-SUFFIX,news-events.apple.com
+DOMAIN-SUFFIX,news-edge.apple.com
+DOMAIN-SUFFIX,news-assets.apple.com
+DOMAIN,news-todayconfig-edge.apple.com
+DOMAIN,news-sports-events.apple.com
+DOMAIN,c.apple.com
+
 # --- Region detection / location (gspe1-ssl.ls.apple.com is covered by the ls.apple.com suffix) ---
-DOMAIN-SUFFIX,gs-loc.apple.com,AppleNews
-DOMAIN-SUFFIX,gs-loc-cn.apple.com,AppleNews
-DOMAIN-SUFFIX,lcdn-locator.apple.com,AppleNews
-DOMAIN-SUFFIX,lcdn-registration.apple.com,AppleNews
-DOMAIN-SUFFIX,ls.apple.com,AppleNews
+DOMAIN-SUFFIX,gs-loc.apple.com
+DOMAIN-SUFFIX,gs-loc-cn.apple.com
+DOMAIN-SUFFIX,lcdn-locator.apple.com
+DOMAIN-SUFFIX,lcdn-registration.apple.com
+DOMAIN-SUFFIX,ls.apple.com
+
 # --- BROAD shared Apple domains (the 7 entries the old list uniquely contributed), kept to preserve existing routing ---
 # >They also cover: gateway.icloud.com + mask*.icloud.com (icloud.com),
 # >apple.comscoreresearch.com (comscoreresearch.com), apps.mzstatic.com (mzstatic.com).
 # >If you ever narrow them, re-add for News: DOMAIN-SUFFIX,gateway.icloud.com / DOMAIN,apple.comscoreresearch.com
-DOMAIN-SUFFIX,comscoreresearch.com,AppleNews
-DOMAIN-SUFFIX,mzstatic.com,AppleNews
-DOMAIN-SUFFIX,aaplimg.com,AppleNews
-# V6: play/bag kept on AppleNews for News; the rest of itunes.apple.com (App Store, iBooks, Music) moved to Apple group
-DOMAIN,play.itunes.apple.com,AppleNews
-DOMAIN,bag.itunes.apple.com,AppleNews
-DOMAIN-SUFFIX,configuration.apple.com,AppleNews
-DOMAIN-SUFFIX,icloud.com,AppleNews
-DOMAIN,play-cdn.itunes-apple.com.akadns.net,AppleNews
+DOMAIN-SUFFIX,comscoreresearch.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,aaplimg.com
 
+# V6: play/bag kept on AppleNews for News; the rest of itunes.apple.com (App Store, iBooks, Music) moved to Apple group
+DOMAIN,play.itunes.apple.com
+DOMAIN,bag.itunes.apple.com
+DOMAIN-SUFFIX,configuration.apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN,play-cdn.itunes-apple.com.akadns.net

@@ -114,7 +114,6 @@ DOMAIN-SUFFIX,outlook.com
 DOMAIN-SUFFIX,s-microsoft.com
 DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN,officecdn-microsoft-com.akamaized.net
 # > NetEase
 USER-AGENT,NeteaseMusic*
@@ -188,27 +187,6 @@ DOMAIN-SUFFIX,whatismyip.com
 DOMAIN-SUFFIX,netspeedtestmaster.com
 DOMAIN,speedtest.macpaw.com
 # > Private Tracker
-DOMAIN-SUFFIX,awesome-hd.me
-DOMAIN-SUFFIX,broadcasthe.net
-DOMAIN-SUFFIX,chdbits.co
-DOMAIN-SUFFIX,classix-unlimited.co.uk
-DOMAIN-SUFFIX,empornium.me
-DOMAIN-SUFFIX,gazellegames.net
-DOMAIN-SUFFIX,hdchina.org
-DOMAIN-SUFFIX,hdsky.me
-DOMAIN-SUFFIX,jpopsuki.eu
-DOMAIN-SUFFIX,keepfrds.com
-DOMAIN-SUFFIX,m-team.cc
-DOMAIN-SUFFIX,nanyangpt.com
-DOMAIN-SUFFIX,ncore.cc
-DOMAIN-SUFFIX,open.cd
-DOMAIN-SUFFIX,ourbits.club
-DOMAIN-SUFFIX,passthepopcorn.me
-DOMAIN-SUFFIX,privatehd.to
-DOMAIN-SUFFIX,redacted.ch
-DOMAIN-SUFFIX,springsunday.net
-DOMAIN-SUFFIX,tjupt.org
-DOMAIN-SUFFIX,totheglory.im
 # > Other
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,360in.com
@@ -251,7 +229,6 @@ DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,frdic.com
 DOMAIN-SUFFIX,futu5.com
 DOMAIN-SUFFIX,futunn.com
-DOMAIN-SUFFIX,gandi.net
 DOMAIN-SUFFIX,geilicdn.com
 DOMAIN-SUFFIX,getpricetag.com
 DOMAIN-SUFFIX,gifshow.com
@@ -284,8 +261,6 @@ DOMAIN-SUFFIX,myzaker.com
 DOMAIN-SUFFIX,nim-lang-cn.org
 DOMAIN-SUFFIX,nvidia.com
 DOMAIN-SUFFIX,oracle.com
-DOMAIN-SUFFIX,paypal.com
-DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,qdaily.com
 DOMAIN-SUFFIX,qidian.com
 DOMAIN-SUFFIX,qyer.com
@@ -299,7 +274,6 @@ DOMAIN-SUFFIX,scomper.me
 DOMAIN-SUFFIX,seafile.com
 DOMAIN-SUFFIX,sm.ms
 DOMAIN-SUFFIX,smzdm.com
-DOMAIN-SUFFIX,snapdrop.net
 DOMAIN-SUFFIX,snwx.com
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,takungpao.com
@@ -320,7 +294,6 @@ DOMAIN-SUFFIX,zhangzishi.cc
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,zhuihd.com
-DOMAIN,download.jetbrains.com
 DOMAIN,images-cn.ssl-images-amazon.com
 
 # DNSPod Public DNS+

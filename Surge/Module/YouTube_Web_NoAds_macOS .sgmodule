@@ -1,0 +1,38 @@
+#!name=YouTube Web NoAds (macOS)
+#!desc=Experimental. Removes ads from the YouTube WEB player and feeds in Chrome (www.youtube.com) by rewriting responses. macOS only. Does not touch the YouTube app engine in your conf.
+#!category=AdBlock
+#!system=mac
+#!arguments=Debug:false,FeedAds:true,PlayerAds:true
+#!arguments-desc=Debug: true prints what was removed to the Surge script log.\nFeedAds: remove ad cards from home, search and watch-page lists.\nPlayerAds: remove video ad scheduling (pre-roll / mid-roll) from player data.\n\nAll three take true or false.
+
+# =====================================================================
+# SETUP (read once)
+#  1. Put youtube_web_noads.js in the SAME folder as the profile you run
+#     (e.g. next to Mac1108_V2_HK.conf). script-path below is relative
+#     to the profile. To host it instead, replace it with a full URL.
+#  2. The Surge CA must be installed AND trusted in the macOS keychain
+#     (Chrome uses the system trust store). www.youtube.com must be in
+#     MITM (the line below appends it; your confs already have it).
+#  3. Surge Enhanced Mode or system proxy must be carrying Chrome.
+#  4. Keep ONE engine per URL: this module only matches www.youtube.com.
+#     The app engine (youtubei.googleapis.com) in your conf is separate.
+#
+# Surge runs only the FIRST enabled matching http-response script per
+# request, so the two patterns below are deliberately disjoint
+# (page HTML vs /youtubei/v1/ JSON).
+# =====================================================================
+
+[Rule]
+# Chrome prefers QUIC (UDP/443) for youtube.com. Surge cannot decrypt
+# QUIC, so reject it and force Chrome to fall back to TCP/HTTP2.
+AND,((DOMAIN-SUFFIX,youtube.com), (PROTOCOL,UDP)),REJECT
+
+[Script]
+# JSON API calls made by the web player after the page has loaded.
+yt-web-json = type=http-response,pattern=^https:\/\/www\.youtube\.com\/youtubei\/v1\/(?:player|next|browse|search|get_watch|reel\/reel_item_watch|reel\/reel_watch_sequence)(?:\?.*)?$,requires-body=1,max-size=10485760,timeout=20,script-path=youtube_web_noads.js,argument="{"debug":{{{Debug}}},"feedAds":{{{FeedAds}}},"playerAds":{{{PlayerAds}}}}"
+
+# Full page loads: data is embedded in the HTML.
+yt-web-html = type=http-response,pattern=^https:\/\/www\.youtube\.com\/(?:$|\?|watch\?|results\?|feed\/|playlist\?|shorts\/|@|channel\/),requires-body=1,max-size=10485760,timeout=20,script-path=youtube_web_noads.js,argument="{"debug":{{{Debug}}},"feedAds":{{{FeedAds}}},"playerAds":{{{PlayerAds}}}}"
+
+[MITM]
+hostname = %APPEND% www.youtube.com

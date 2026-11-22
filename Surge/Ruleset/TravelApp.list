@@ -1,0 +1,161 @@
+# TravelApp — China / Hong Kong travel DIRECT routing
+# Updated: 2026-11-22
+# Policy belongs on the calling RULE-SET line: DIRECT.
+# First-party portals plus attributable travel hosts in logs and screenshots.
+# DOMAIN-SUFFIX matches the domain itself and all subdomains.
+# No generic CDN, analytics, payment or cloud-provider suffixes.
+
+# Hotels and loyalty
+# Marriott Bonvoy
+DOMAIN-SUFFIX,marriott.com
+# Hilton Honors
+DOMAIN-SUFFIX,hilton.com
+# ALL Accor
+DOMAIN-SUFFIX,accor.com
+# Shangri-La
+DOMAIN-SUFFIX,shangri-la.com
+# World of Hyatt
+DOMAIN-SUFFIX,hyatt.com
+# IHG
+DOMAIN-SUFFIX,ihg.com
+# GHA DISCOVERY
+DOMAIN-SUFFIX,ghadiscovery.com
+# Brilliant by Langham
+DOMAIN-SUFFIX,brilliantbylangham.com
+# H Rewards
+DOMAIN-SUFFIX,hrewards.com
+# I Prefer
+DOMAIN-SUFFIX,iprefer.com
+# Priority Pass+
+DOMAIN-SUFFIX,prioritypass.com
+
+# Booking and business travel
+# Tripadvisor
+DOMAIN-SUFFIX,tripadvisor.com
+# Navan
+DOMAIN-SUFFIX,navan.com
+# Amex Travel
+DOMAIN-SUFFIX,amextravel.com
+# Booking.com
+DOMAIN-SUFFIX,booking.com
+# Expedia
+DOMAIN-SUFFIX,expedia.com
+# Klook
+DOMAIN-SUFFIX,klook.com
+# Airbnb
+DOMAIN-SUFFIX,airbnb.com
+# Priceline
+DOMAIN-SUFFIX,priceline.com
+
+# Airlines
+# United
+DOMAIN-SUFFIX,united.com
+# Turkish Airlines
+DOMAIN-SUFFIX,turkishairlines.com
+# Singapore Airlines
+DOMAIN-SUFFIX,singaporeair.com
+# ANA
+DOMAIN-SUFFIX,ana.co.jp
+# Lufthansa
+DOMAIN-SUFFIX,lufthansa.com
+# Delta
+DOMAIN-SUFFIX,delta.com
+# Air France
+DOMAIN-SUFFIX,airfrance.com
+# Air France France portal
+DOMAIN-SUFFIX,airfrance.fr
+# KLM
+DOMAIN-SUFFIX,klm.com
+# China Eastern
+DOMAIN-SUFFIX,ceair.com
+# China Southern
+DOMAIN-SUFFIX,csair.com
+# American Airlines
+DOMAIN-SUFFIX,aa.com
+# Alaska Airlines
+DOMAIN-SUFFIX,alaskaair.com
+# Hawaiian Airlines
+DOMAIN-SUFFIX,hawaiianairlines.com
+# Qatar Airways
+DOMAIN-SUFFIX,qatarairways.com
+# Cathay Pacific
+DOMAIN-SUFFIX,cathaypacific.com
+# JAL
+DOMAIN-SUFFIX,jal.co.jp
+# Virgin Atlantic
+DOMAIN-SUFFIX,virginatlantic.com
+# KM Malta Airlines / KM Rewards
+DOMAIN-SUFFIX,kmmaltairlines.com
+# Hong Kong Airlines (logo inferred)
+DOMAIN-SUFFIX,hongkongairlines.com
+# Emirates
+DOMAIN-SUFFIX,emirates.com
+# easyJet
+DOMAIN-SUFFIX,easyjet.com
+
+# China and Hong Kong transport / travel supplements (not identified in screenshots)
+# Trip.com
+DOMAIN-SUFFIX,trip.com
+# Ctrip
+DOMAIN-SUFFIX,ctrip.com
+# Mafengwo: mapi.mafengwo.cn observed; existing URL rewrites remain effective
+DOMAIN-SUFFIX,mafengwo.cn
+# Fliggy: h-adashx.ut.fliggy.com observed; includes this telemetry host
+DOMAIN-SUFFIX,fliggy.com
+# Qunar: qcweb.qunar.com observed
+DOMAIN-SUFFIX,qunar.com
+# Flyert: www.flyert.com.cn observed
+DOMAIN-SUFFIX,flyert.com.cn
+# China Railway 12306
+DOMAIN-SUFFIX,12306.cn
+# MTR
+DOMAIN-SUFFIX,mtr.com.hk
+# Octopus
+DOMAIN-SUFFIX,octopus.com.hk
+# KMB
+DOMAIN-SUFFIX,kmb.hk
+# Citybus
+DOMAIN-SUFFIX,citybus.com.hk
+# Uber
+DOMAIN-SUFFIX,uber.com
+# Amap public portal
+DOMAIN-SUFFIX,amap.com
+
+# Observed travel services in supplied logs
+# VariFlight
+DOMAIN-SUFFIX,variflight.com
+# DiDi
+DOMAIN-SUFFIX,diditaxi.com.cn
+
+# Shared Amex host: required by the travel portal redirect.
+# This exact host also serves non-travel American Express pages.
+DOMAIN,www.americanexpress.com
+
+# Observed AutoNavi dispatcher; exact exception to V28 is.autonavi.com REJECT.
+# May also affect Apple Maps routing/provider behavior on the same host.
+DOMAIN,dispatcher.is.autonavi.com
+
+# 2026-11-22 additions: China hotel domains and observed app dependencies.
+# Exact third-party hosts only; includes requested feedback/personalization/telemetry.
+# These DIRECT exceptions do not establish login success or faster connectivity.
+# IHG China: China portal / account host
+DOMAIN-SUFFIX,ihg.com.cn
+# Hyatt China: mobileapp.hyatt.com.cn
+DOMAIN-SUFFIX,hyatt.com.cn
+# Hilton API: hms.hiltonapi.com previously FINAL -> TW31
+DOMAIN-SUFFIX,hiltonapi.com
+# Hilton mobile: m.hilton.io previously FINAL -> JP31
+DOMAIN-SUFFIX,hilton.io
+# IHG Adobe Target: Previously REJECT-DROP; requested exact-host exception
+DOMAIN,ihgsixcontinentshote.tt.omtrdc.net
+# IHG Qualtrics 1: Previously cdn.conf -> HK31
+DOMAIN,znaeyokp2zrxb2lop-ihg.siteintercept.qualtrics.com
+# IHG Qualtrics 2: Previously cdn.conf -> JP31
+DOMAIN,znd0y3ntzchbfavjd-ihg.siteintercept.qualtrics.com
+# Hilton Qualtrics: Previously cdn.conf -> JP31
+DOMAIN,zn2rr2q4mrywz3tzf-hiltonreservations.siteintercept.qualtrics.com
+# Hilton Adobe data: Previously FINAL -> TW31
+DOMAIN,hilton.data.adobedc.net
+# Hilton Conductrics: Previously FINAL -> TW31
+DOMAIN,api-hilton.conductrics.net
+

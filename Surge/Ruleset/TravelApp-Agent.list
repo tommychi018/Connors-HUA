@@ -1,0 +1,35 @@
+# TravelApp Agent - booking services from the supplied iPhone screenshot
+# Updated: 2026-11-22
+# Policy-free rule list. Recommended initial caller policy: DIRECT.
+# Put its caller BEFORE TravelApp if you want a separate agent policy to take effect.
+# Seven identified apps; portal-domain baseline, not complete mobile API coverage.
+# Journal stays with existing Apple/iCloud routing.
+# Red-and-black app labelled Travel is pending identification; no guessed domains.
+# Only the visible folder page is included.
+
+# Booking.com
+DOMAIN-SUFFIX,booking.com
+
+# Expedia
+DOMAIN-SUFFIX,expedia.com
+# Exact image/asset host referenced by the official Expedia portal.
+DOMAIN,a.travel-assets.com
+
+# Navan
+DOMAIN-SUFFIX,navan.com
+
+# Amex Travel
+DOMAIN-SUFFIX,amextravel.com
+# Official Amex Travel portal redirects here. This host also serves non-travel pages.
+DOMAIN,www.americanexpress.com
+
+# Tripadvisor
+DOMAIN-SUFFIX,tripadvisor.com
+
+# Klook
+DOMAIN-SUFFIX,klook.com
+
+# Airbnb
+DOMAIN-SUFFIX,airbnb.com
+# Exact image host referenced by the official Airbnb portal.
+DOMAIN,a0.muscache.com

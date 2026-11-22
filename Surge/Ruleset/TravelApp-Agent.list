@@ -1,10 +1,10 @@
-# TravelApp Agent - booking services from the supplied iPhone screenshot
+# Travel Agent - booking and business travel services
 # Updated: 2026-11-22
 # Policy-free rule list. Recommended initial caller policy: DIRECT.
-# Put its caller BEFORE TravelApp if you want a separate agent policy to take effect.
-# Seven identified apps; portal-domain baseline, not complete mobile API coverage.
+# Separate from TravelApp hotel/airline rules. Caller policy selects DIRECT or Region-AP.
+# Eight identified services; portal-domain baseline, not complete mobile API coverage.
 # Journal stays with existing Apple/iCloud routing.
-# Red-and-black app labelled Travel is pending identification; no guessed domains.
+# App labelled Travel is excluded at the user's request.
 # Only the visible folder page is included.
 
 # Booking.com
@@ -33,3 +33,6 @@ DOMAIN-SUFFIX,klook.com
 DOMAIN-SUFFIX,airbnb.com
 # Exact image host referenced by the official Airbnb portal.
 DOMAIN,a0.muscache.com
+
+# Priceline - moved from TravelApp
+DOMAIN-SUFFIX,priceline.com

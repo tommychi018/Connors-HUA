@@ -90,6 +90,8 @@ DOMAIN-SUFFIX,qunar.com
 DOMAIN-SUFFIX,flyert.com.cn
 # China Railway 12306
 DOMAIN-SUFFIX,12306.cn
+# China Map Transport 
+DOMAIN-SUFFIX,baidu.com
 # MTR
 DOMAIN-SUFFIX,mtr.com.hk
 # Octopus

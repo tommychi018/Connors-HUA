@@ -1,0 +1,88 @@
+# FinanceApp — user-supplied domain rules
+# Created: 2026-11-28
+# Policy-free external Surge ruleset.
+# NA/US categories below are reference comments only.
+# The calling RULE-SET line applies ONE policy to every rule in this file.
+
+# FinanceApp-NA — reference category
+# Bank of America | Requested
+# Supplied login and promotion hosts covered by one suffix.
+DOMAIN-SUFFIX,bankofamerica.com
+
+# Citi US | Requested
+# The three additional public roots redirected to citi.com in web lookup. Other national Citi domains are outside this draft.
+DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,citibankonline.com
+DOMAIN-SUFFIX,citicards.com
+
+# Chase | Requested
+# Login host linked by official portal. Corporate JPMorgan sites are reference-only.
+DOMAIN-SUFFIX,chase.com
+
+# Wells Fargo | Requested
+# Media and financial guidance hosts linked from official home page; parent suffix coverage is proposed expansion within requested bank scope.
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wellsfargomedia.com
+DOMAIN-SUFFIX,wf.com
+
+# Capital One | Requested
+# Supplied login and account host; official portal links verified sign-in and ecm media.
+DOMAIN-SUFFIX,capitalone.com
+
+# PayPal | Proposed
+# Proposed US-oriented route; paypalobjects.com assets also appear in merchant checkouts, so this affects those flows too.
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+
+# Fiverr | Proposed
+# Screenshot addition; use NA as a provisional route. Shared CDN and social-login hosts not included.
+DOMAIN-SUFFIX,fiverr.com
+
+# TurboTax | Proposed
+# Use product suffix plus linked exact account/product hosts; shared Intuit login will affect other Intuit products. No blanket intuit.com suffix.
+DOMAIN-SUFFIX,turbotax.intuit.com
+DOMAIN,accounts.intuit.com
+DOMAIN,shop.app.intuit.com
+
+# Venmo | Proposed
+# US-payment route proposal; linked app-download host covered.
+DOMAIN-SUFFIX,venmo.com
+
+# FinanceApp-US — reference category
+# American Express US / Europe | Requested
+# USER CONFIRMED: all AMEX regions, including US/Europe/HK, use Region-US. Shared parent suffix covers all regional paths and subdomains. Other AMEX-owned domains and authenticated app endpoints remain subject to runtime verification.
+DOMAIN-SUFFIX,americanexpress.com
+
+# Fidelity | Requested
+# Public digital root redirected to fidelity.com. Authenticated API/market-data endpoints not captured.
+DOMAIN-SUFFIX,fidelity.com
+
+# Vanguard | Requested
+# Login/account-registration hosts linked by official investor portal.
+DOMAIN-SUFFIX,vanguard.com
+
+# moomoo | Requested
+# Official US portal and referral/transfer hosts; Futu-family runtime endpoints remain a coverage gap.
+DOMAIN-SUFFIX,moomoo.com
+
+# Yahoo Finance | Proposed
+# Portal lookup returned 429; domain selected from the official portal URL, not a successful page capture. Suffix covers *.finance.yahoo.com but excludes unrelated Yahoo services. Shared login/CDN dependencies need logs.
+DOMAIN-SUFFIX,finance.yahoo.com
+
+# Coinbase | Proposed
+# Applies the requested trading-platform route as a proposal for this screenshot addition. No account-market eligibility or runtime API coverage was tested.
+DOMAIN-SUFFIX,coinbase.com
+
+# BIT / Matrixport | Proposed
+# Official source identifies Matrixport → BIT rebrand. Trading route is proposed; a US IP does not establish account eligibility or feature access.
+DOMAIN-SUFFIX,bit.com
+DOMAIN-SUFFIX,matrixport.com
+
+# Carta | Proposed
+# Equity-platform proposal following trading category. Official site links login.app.carta.com. Third-party iframe excluded.
+DOMAIN-SUFFIX,carta.com
+
+# Lemonade Insurance | Requested
+# Supplied /login and official asset hosts covered.
+DOMAIN-SUFFIX,lemonade.com

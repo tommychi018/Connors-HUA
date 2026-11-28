@@ -120,22 +120,26 @@ DOMAIN,dispatcher.is.autonavi.com
 # These DIRECT exceptions do not establish login success or faster connectivity.
 # IHG China: China portal / account host
 DOMAIN-SUFFIX,ihg.com.cn
-# Hyatt China: mobileapp.hyatt.com.cn
-DOMAIN-SUFFIX,hyatt.com.cn
-# Hilton API: hms.hiltonapi.com previously FINAL -> TW31
-DOMAIN-SUFFIX,hiltonapi.com
-# Hilton mobile: m.hilton.io previously FINAL -> JP31
-DOMAIN-SUFFIX,hilton.io
 # IHG Adobe Target: Previously REJECT-DROP; requested exact-host exception
 DOMAIN,ihgsixcontinentshote.tt.omtrdc.net
 # IHG Qualtrics 1: Previously cdn.conf -> HK31
 DOMAIN,znaeyokp2zrxb2lop-ihg.siteintercept.qualtrics.com
 # IHG Qualtrics 2: Previously cdn.conf -> JP31
 DOMAIN,znd0y3ntzchbfavjd-ihg.siteintercept.qualtrics.com
+
+# Hyatt China: mobileapp.hyatt.com.cn
+DOMAIN-SUFFIX,hyatt.com.cn
+
+# Hilton API: hms.hiltonapi.com previously FINAL -> TW31
+DOMAIN-SUFFIX,hiltonapi.com
+# Hilton mobile: m.hilton.io previously FINAL -> JP31
+DOMAIN-SUFFIX,hilton.io
 # Hilton Qualtrics: Previously cdn.conf -> JP31
 DOMAIN,zn2rr2q4mrywz3tzf-hiltonreservations.siteintercept.qualtrics.com
 # Hilton Adobe data: Previously FINAL -> TW31
 DOMAIN,hilton.data.adobedc.net
 # Hilton Conductrics: Previously FINAL -> TW31
 DOMAIN,api-hilton.conductrics.net
+
+
 

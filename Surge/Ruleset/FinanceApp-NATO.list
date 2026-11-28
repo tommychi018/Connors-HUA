@@ -1,0 +1,20 @@
+# FinanceApp-NATO
+# Created: 2026-11-28
+# Intended calling policy: Region-NATO.
+# Policy-free external Surge ruleset. Assign the policy on the calling RULE-SET line.
+
+# GasanMamo Insurance | Requested
+# Click host comes from supplied URL; public corporate site fetched, supplied timeout portal could not be fetched. No portal-session observation.
+DOMAIN-SUFFIX,gasanmamo.com
+
+# Ziraat Bank | Proposed
+# Provisional choice among existing named groups only. No Turkey exit was established; Region-NATO is not a guarantee of a Turkish IP. Review before activation.
+DOMAIN-SUFFIX,ziraatbank.com.tr
+
+# Revolut Bank | Proposed
+# Provisional international/UK-oriented route; align exit with account market and keep it stable.
+DOMAIN-SUFFIX,revolut.com
+
+# Wise Bank | Proposed
+# Provisional international/UK-oriented route. Legacy transferwise.com is reference candidate, not assumed necessary.
+DOMAIN-SUFFIX,wise.com
